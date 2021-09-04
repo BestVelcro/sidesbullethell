@@ -3,4 +3,9 @@ if(startattack == true) && (state == "IDLE"){
 	startattack = false;
 	clock = false;
 }
+if(startattack == true) && (state == "ATTACK"){
+	state = "IDLE";
+	startattack = false;
+	clock = false;
+}
 show_debug_message("Banana");

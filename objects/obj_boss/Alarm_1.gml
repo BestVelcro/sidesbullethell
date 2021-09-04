@@ -3,6 +3,5 @@ if(state == "IDLE"){
 	show_debug_message("Arroz");
 }
 if(state == "ATTACK"){
-	state = "IDLE";
-	clock = false;
+	startattack = true;
 }

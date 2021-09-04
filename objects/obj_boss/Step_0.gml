@@ -2,6 +2,7 @@ if(state == "IDLE"){
 	sprite_index = spr_bossidle;
 	show_debug_message("Opa");
 	if(clock == false){
+		attacktype = irandom(1);
 	alarm[1] = irandom_range(1,3)*room_speed;
 	clock = true;
 	}
