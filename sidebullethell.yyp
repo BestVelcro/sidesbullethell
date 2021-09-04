@@ -1,13 +1,18 @@
 {
   "resources": [
     {"id":{"name":"Approach","path":"scripts/Approach/Approach.yy",},"order":0,},
+    {"id":{"name":"boss_attack","path":"scripts/boss_attack/boss_attack.yy",},"order":2,},
     {"id":{"name":"spr_arena","path":"sprites/spr_arena/spr_arena.yy",},"order":1,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":7,},
     {"id":{"name":"obj_arena","path":"objects/obj_arena/obj_arena.yy",},"order":6,},
     {"id":{"name":"spr_boss","path":"sprites/spr_boss/spr_boss.yy",},"order":3,},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":5,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"spr_bossbullet","path":"sprites/spr_bossbullet/spr_bossbullet.yy",},"order":4,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":2,},
+    {"id":{"name":"obj_bossbullet","path":"objects/obj_bossbullet/obj_bossbullet.yy",},"order":9,},
+    {"id":{"name":"spr_bossidle","path":"sprites/spr_bossidle/spr_bossidle.yy",},"order":5,},
+    {"id":{"name":"boss_idle","path":"scripts/boss_idle/boss_idle.yy",},"order":1,},
     {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"order":8,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},

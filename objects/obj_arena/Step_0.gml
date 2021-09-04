@@ -13,5 +13,3 @@ if(keyboard_check_pressed(vk_shift)){
 }
 current_maxspeed = Approach(current_maxspeed,maxspeed,acceleration);
 image_angle += pspeed;
-
-show_debug_message(string(current_maxspeed)+"\n"+string(maxspeed));

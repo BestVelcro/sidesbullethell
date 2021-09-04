@@ -7,3 +7,4 @@ if(keyboard_check_pressed(vk_space)){
 x=obj_arena.x+lengthdir_x(masterrange,masterangle+obj_arena.image_angle);
 y=obj_arena.y+lengthdir_y(masterrange,masterangle+obj_arena.image_angle);
 image_angle = obj_arena.image_angle-180;
+
