@@ -8,4 +8,3 @@ if(startattack == true) && (state == "ATTACK"){
 	startattack = false;
 	clock = false;
 }
-show_debug_message("Banana");
