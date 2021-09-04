@@ -4,3 +4,4 @@ state = "IDLE";
 startattack = false;
 clock = false;
 attacktype = 0;
+angle = choose(0,22);
