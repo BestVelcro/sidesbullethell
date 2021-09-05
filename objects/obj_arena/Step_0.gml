@@ -7,7 +7,7 @@ pspeed = Approach(pspeed,0,acceleration);
 }else{
 pspeed = clamp(pspeed + move * acceleration, -current_maxspeed, current_maxspeed);
 }
-if(keyboard_check_pressed(vk_shift)) && (candash == true){
+if(keyboard_check_pressed(vk_shift)) && (candash == true) && (move != 0){
 	candash = false;
 	current_maxspeed += 4;
 	pspeed += current_maxspeed*move;

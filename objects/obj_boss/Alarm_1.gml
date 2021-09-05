@@ -4,3 +4,4 @@ if(state == "IDLE"){
 if(state == "ATTACK"){
 	startattack = true;
 }
+image_speed = 1;

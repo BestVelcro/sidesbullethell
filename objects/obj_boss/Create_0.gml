@@ -20,3 +20,19 @@ healthbar_y = sprite_get_height(spr_bossbar);
 
 hp_max = 200;
 hp = hp_max;
+
+default_angle = 45;
+current_angle = default_angle;
+
+gun = instance_nearest(x,y,obj_bossgun);
+
+start_second_phase = false;
+second_phase = false;
+
+num_attacks = 2;
+
+dashcords_x = x;
+dashcords_y = y;
+start_dash = false;
+
+shotgund_cooldown = room_speed;
