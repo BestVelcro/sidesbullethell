@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 0,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -129,8 +129,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "boss",
+    "path": "folders/Sprites/boss.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bossidle",

@@ -21,3 +21,12 @@ if(keyboard_check_pressed(vk_shift)) && (candash == true){
 }
 current_maxspeed = Approach(current_maxspeed,maxspeed,acceleration);
 image_angle += pspeed;
+
+frame_counter++;
+if(frame_counter >= 6){
+	current_frame++;
+	frame_counter = 0;
+}
+if(current_frame > sprite_get_number(spr_bgarena)-1){
+	current_frame = 0;
+}

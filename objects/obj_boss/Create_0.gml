@@ -12,5 +12,11 @@ move_speed = 1;
 min_speed = move_speed;
 max_speed = 5;
 acceleration = 0.9;
-oldx_move = 0;
-oldy_move = 0;
+
+healthbar_width = 323;
+healthbar_height = 17;
+healthbar_x = floor((room_width/2)-(healthbar_width/2))
+healthbar_y = sprite_get_height(spr_bossbar);
+
+hp_max = 200;
+hp = hp_max;
