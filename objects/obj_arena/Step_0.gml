@@ -1,7 +1,7 @@
 leftkey = keyboard_check(vk_left);
 rightkey = keyboard_check(vk_right);
 var move = rightkey-leftkey;
-
+if(instance_exists(obj_player)){
 if(move == 0){
 pspeed = Approach(pspeed,0,acceleration);
 }else{
@@ -29,4 +29,5 @@ if(frame_counter >= 6){
 }
 if(current_frame > sprite_get_number(spr_bgarena)-1){
 	current_frame = 0;
+}
 }
