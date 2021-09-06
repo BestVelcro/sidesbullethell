@@ -3,3 +3,7 @@ masterrange=point_distance(x,y,obj_arena.x,obj_arena.y)
 masterangle=point_direction(x,y,obj_arena.x,obj_arena.y)-image_angle
 iframe = false;
 canshoot = true;
+gundelaydefault = 2;
+gundelay = gundelaydefault;
+gundamagedefault = 5;
+gundamage = gundamagedefault;

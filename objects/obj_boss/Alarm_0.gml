@@ -12,7 +12,7 @@ alarm[0] = room_speed/10;
 // Bullet Follow Attack
 if(state == "ATTACK") && (attacktype == 1){
 		if(second_phase){
-		attacktype = 0;	
+		attacktype = 2;	
 	}
 var bullet = instance_create_layer(x,y,"Bullet",obj_bossbullet);
 if(instance_exists(obj_player)){
@@ -47,4 +47,39 @@ if(instance_exists(obj_player)){
 	move_speed = max_speed;
 	sprite_index = spr_bossdash;
 }
+}
+
+// Area Denial
+if(state == "ATTACK") && (attacktype == 4){
+	if(!arrow){
+		arrow = true;
+		danger = instance_create_layer(x,y-sprite_height/2-10,"Boss",obj_dangerarrow);
+	}
+	if(canattack){
+	repeat(180){
+var bullet = instance_create_layer(x,y,"Bullet",obj_bossbullet);
+bullet.image_angle = sideangle;
+bullet.direction = sideangle;
+bullet.speed += 1;
+sideangle++;
+	}
+	sideangle = side;
+	}
+	alarm[0] = room_speed/10;
+}
+
+// Bomb Attack
+if(state == "ATTACK") && (attacktype == 5){
+if(instance_exists(obj_player)){
+	if(gun.sprite_index != spr_bossgundeploy){
+		var left_corner_x=gun.x+lengthdir_x(gun.sprite_width,gun.image_angle);
+		var left_corner_y=gun.y+lengthdir_y(gun.sprite_height,gun.image_angle);
+		var bullet = instance_create_layer(left_corner_x,left_corner_y,"Bullet",obj_bomb);
+	var player_location = gun.image_angle;
+	gun.sprite_index = spr_bossgunshooting;
+bullet.direction = player_location;
+bullet.image_angle = player_location;
+	}
+}
+	alarm[0] = shotgund_cooldown;
 }

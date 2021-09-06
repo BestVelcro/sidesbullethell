@@ -36,3 +36,8 @@ dashcords_y = y;
 start_dash = false;
 
 shotgund_cooldown = room_speed;
+side = choose(90,270);
+sideangle = side;
+canattack = false;
+arrow = false;
+dead = false;

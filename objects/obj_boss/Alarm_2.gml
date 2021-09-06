@@ -6,3 +6,7 @@ if(state == "ATTACK") && (attacktype == 0){
 	current_angle = current_angle/2;
 	}
 }
+
+if(hp <= 0){	
+	TransitionStart(Win,sq_fadeout,sq_fadein);
+}

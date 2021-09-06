@@ -4,7 +4,9 @@ if(keyboard_check(vk_space)) && (canshoot == true){
 	bullet = instance_create_layer(x,y,"Player",obj_bullet);
 	bullet.image_angle = image_angle-90;
 	bullet.direction = image_angle-90;
-	alarm[1] = room_speed*2;
+	bullet.damage = gundamage;
+	bullet.speed = gundamage;
+	alarm[1] = room_speed*gundelay;
 }
 
 x=obj_arena.x-lengthdir_x(masterrange,masterangle+obj_arena.image_angle);
@@ -20,3 +22,12 @@ if(global.health <= 0){
 	}
 	instance_destroy();
 }
+
+/*
+enum poweruptype {
+	damage = spr_powerupdamage,
+	shotspeed = spr_powerupspeed,
+	healthup = spr_poweruphealth
+}
+powerup = poweruptype.damage
+*/

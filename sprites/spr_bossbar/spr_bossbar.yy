@@ -90,7 +90,7 @@
   "nineSlice": null,
   "parent": {
     "name": "bossbar",
-    "path": "folders/Sprites/bossbar.yy",
+    "path": "folders/Sprites/HUD/bossbar.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bossbar",

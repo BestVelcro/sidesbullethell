@@ -1,2 +1,2 @@
-speed = 4;
-xx = x;
+defaultspeed = 4;
+speed = defaultspeed;

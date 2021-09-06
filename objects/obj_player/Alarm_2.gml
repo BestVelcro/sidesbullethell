@@ -1,0 +1,2 @@
+gundamage = gundamagedefault;
+gundelay = gundelaydefault;

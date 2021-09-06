@@ -1,0 +1,1 @@
+	TransitionStart(Action,sq_fadeout,sq_fadein);
